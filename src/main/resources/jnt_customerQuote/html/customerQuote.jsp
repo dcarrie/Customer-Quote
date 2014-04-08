@@ -8,6 +8,8 @@
 <%--@elvariable id="currentNode" type="org.jahia.services.content.JCRNodeWrapper"--%>
 <%--@elvariable id="renderContext" type="org.jahia.services.render.RenderContext"--%>
 
+<template:addResources type="css" resources="customer-quote.css"/>
+
 <h4>${currentNode.properties['jcr:title'].string}</h4>
 
 <div class="floatleft">
