@@ -3,6 +3,9 @@
 <%--@elvariable id="renderContext" type="org.jahia.services.render.RenderContext"--%>
 
 
+<template:addResources type="css" resources="customer-quote.css"/>
+
+
 <h2>${currentNode.properties['jcr:title'].string}</h2>
 <div class="cust-quote-top floatleft" style="width:150px">
     <div class="cust-quote-bottom">
