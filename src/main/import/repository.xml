@@ -1,24 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<content xmlns:htmix="http://www.jahia.org/ht/mix" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mymix="http://www.my.com/jahia/mix" xmlns:htnt="http://www.jahia.org/ht/nt" xmlns:jnt="http://www.jahia.org/jahia/nt/1.0" xmlns:test="http://www.apache.org/jackrabbit/test" xmlns:docmix="http://www.jahia.org/jahia/docspace/mix/1.0" xmlns:jmix="http://www.jahia.org/jahia/mix/1.0" xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:test_templates="http://www.jahia.org/jahia/test_templates/nt/1.0" xmlns:mynt="http://www.my.com/jahia/nt" xmlns:docnt="http://www.jahia.org/jahia/docspace/nt/1.0" xmlns:sv="http://www.jcp.org/jcr/sv/1.0" xmlns:commix="http://www.jahia.com/jahia/mix/1.0" xmlns:rep="internal">
-    <templateSets jcr:primaryType="jnt:templateSets">
-        <customer-quote j:dependencies="default grid" j:installedModules="customer-quote" j:originWS="default" j:siteType="module" j:title="Customer Quote" j:wcagCompliance="true" jcr:primaryType="jnt:virtualsite">
-            <portlets j:originWS="default" jcr:primaryType="jnt:portletFolder" />
-            <files j:originWS="default" jcr:primaryType="jnt:folder" />
-            <contents j:originWS="default" jcr:primaryType="jnt:contentFolder" />
-            <templates j:originWS="default" j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
-                <files j:originWS="default" jcr:primaryType="jnt:folder" />
-                <contents j:originWS="default" jcr:primaryType="jnt:contentFolder" />
-                <customer-quote-template j:applyOn="jnt:customerQuote" j:defaultTemplate="true" j:hiddenTemplate="false" j:originWS="default" j:priority="10" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:contentTemplate">
-                    <j:acl j:inherit="true" jcr:primaryType="jnt:acl" />
-                    <j:translation_en jcr:language="en" jcr:primaryType="jnt:translation" jcr:title="Customer Quote Template" />
-                    <pagecontent j:originWS="default" jcr:primaryType="jnt:contentList">
-                        <main-row column="1col16" j:originWS="default" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:row">
-                            <j:acl j:inherit="true" jcr:primaryType="jnt:acl" />
-                            <main-row-col1 j:originWS="default" jcr:primaryType="jnt:contentList">
-                                <main-resource-display j:mainResourceView="detail" j:originWS="default" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:mainResourceDisplay">
-                                    <j:acl j:inherit="true" jcr:primaryType="jnt:acl" />
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <customer-quote j:dependencies="default grid"
+                      j:installedModules="customer-quote"
+                      j:modulePriority="0"
+                      j:moduleType="module"
+                      j:title="Customer Quote"
+                      jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                      jcr:primaryType="jnt:module">
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates j:rootTemplatePath="/base" jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder"/>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <customer-quote-template j:applyOn="jnt:customerQuote"
+                                     j:defaultTemplate="true"
+                                     j:hiddenTemplate="false"
+                                     j:priority="10"
+                                     jcr:mixinTypes="jmix:accessControlled"
+                                     jcr:primaryType="jnt:contentTemplate">
+                        <j:acl j:inherit="true" jcr:primaryType="jnt:acl"/>
+                        <j:translation_en jcr:language="en"
+                                 jcr:mixinTypes="mix:title"
+                                 jcr:primaryType="jnt:translation"
+                                 jcr:title="Customer Quote Template"/>
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <main-row column="1col16"
+                            jcr:mixinTypes="jmix:accessControlled"
+                            jcr:primaryType="jnt:row">
+                                <j:acl j:inherit="true" jcr:primaryType="jnt:acl"/>
+                                <main-row-col1 jcr:primaryType="jnt:contentList">
+                                    <main-resource-display j:mainResourceView="detail"
+                                               jcr:mixinTypes="jmix:accessControlled"
+                                               jcr:primaryType="jnt:mainResourceDisplay">
+                                        <j:acl j:inherit="true" jcr:primaryType="jnt:acl"/>
                                 </main-resource-display>
-                                <back-to-parent-page j:originWS="default" jcr:mixinTypes="jmix:accessControlled" jcr:primaryType="jnt:backToParentPage">
+                                    <back-to-parent-page jcr:mixinTypes="jmix:accessControlled"
+                                             jcr:primaryType="jnt:backToParentPage">
                                     <j:acl j:inherit="true" jcr:primaryType="jnt:acl"/>
                                 </back-to-parent-page>
                             </main-row-col1>
@@ -26,7 +46,7 @@
                     </pagecontent>
                 </customer-quote-template>
             </templates>
+                
         </customer-quote>
-    </templateSets>
+    </modules>
 </content>
-

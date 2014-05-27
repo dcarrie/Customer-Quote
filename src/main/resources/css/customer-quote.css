@@ -1,0 +1,13 @@
+.bodywrapper .cust-quote-top{
+    width:25%;
+    background: #eaeaea url(img/quote-top.png) no-repeat top left;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:1.1em;
+    font-weight:bold;
+}
+
+.bodywrapper .cust-quote-bottom{
+    background: url(img/quote-bottom.png) no-repeat bottom right;
+    padding:23px 10px 23px 10px;
+}
+
